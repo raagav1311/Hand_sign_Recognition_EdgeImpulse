@@ -4,6 +4,7 @@
 
 An end-to-end pipeline for American Sign Language (ASL) alphabet classification using PyTorch with model quantization and ONNX export for edge deployment.
 
+
 ---
 
 ## Dataset
@@ -112,6 +113,44 @@ python src/scripts/inference.py --model_path outputs/checkpoints/best_model.onnx
 
 The model has been exported to ONNX and uploaded to Edge Impulse with representative calibration data for hardware deployment on edge devices.
 
+### Android Deployment
+
+The Android application (`handsign-cpp-android-v2.zip`) is included in this repository and was exported from Edge Impulse.
+
+**To run on Android:**
+
+1. **Extract the application:**
+   ```bash
+   unzip handsign-cpp-android-v2.zip
+   cd handsign-cpp-android-v2
+   ```
+
+2. **Open in Android Studio:**
+   - Launch Android Studio
+   - Select "Open an existing project"
+   - Navigate to the extracted folder
+   - Wait for Gradle sync to complete
+
+3. **Connect your Android device:**
+   - Enable Developer Options on your device (Settings → About Phone → Tap Build Number 7 times)
+   - Enable USB Debugging (Settings → Developer Options → USB Debugging)
+   - Connect device via USB and authorize debugging
+
+4. **Build and run:**
+   - Click the "Run" button (green play icon) in Android Studio
+   - Select your connected device
+   - The app will install and launch automatically
+
+5. **Using the app:**
+   - Grant camera permissions when prompted
+   - Point camera at ASL hand signs
+   - Real-time classification will appear on screen
+
+**Requirements:**
+- Android Studio Arctic Fox or later
+- Android device with API level 23+ (Android 6.0+)
+- Camera permission
+
 ---
 
 ## Technical Details
@@ -125,3 +164,4 @@ The model has been exported to ONNX and uploaded to Edge Impulse with representa
 - Adaptive pooling for flexible input sizes
 - Robust ONNX export handling
 - GPL-2.0 dataset compliance
+
