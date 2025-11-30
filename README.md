@@ -13,6 +13,8 @@ An end-to-end pipeline for American Sign Language (ASL) alphabet classification 
 **License:** GNU General Public License v2 (GPL-2.0)  
 **Classes:** 29 (A-Z + Space + Delete + Nothing)
 
+https://studio.edgeimpulse.com/studio/841539/impulse/2/pretrained-model This has link to test the model and you can use the images from the kaggle sets to test the prediction.
+
 Expected directory structure:
 
 ```
