@@ -4,8 +4,6 @@
 
 An end-to-end pipeline for American Sign Language (ASL) alphabet classification using PyTorch with model quantization and ONNX export for edge deployment.
 
-**📁 See [PROJECT_STRUCTURE.md](PROJECT_STRUCTURE.md) for detailed directory layout.**
-
 ---
 
 ## Dataset
